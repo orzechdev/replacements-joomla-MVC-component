@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>Replacements</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>2014-11-20</creationDate>
+	<author>Dawid Tarasiuk</author>
+	<authorEmail>tarasiukdawid@gmail.com</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>Dawid Tarasiuk</copyright>
+	<license>Wersja demonstracyjna. Zakaz rozpowszechniania i modyfikowania bez zgody autora.</license>
+	<!--  The version string is recorded in the components table -->
+	<version>0.0.57</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Komponent zastepstw</description>
+
+	<!-- Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder
+      to copy FROM in the package to install therefore files copied
+      in this section are copied from /site/ in the package -->
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>replacements.php</filename>
+		<filename>index.html</filename>
+		<filename>models/replacements.php</filename>
+		<filename>models/index.html</filename>
+		<filename>views/index.html</filename>
+		<filename>views/replacements/index.html</filename>
+		<filename>views/replacements/view.html.php</filename>
+		<filename>views/replacements/tmpl/default.php</filename>
+		<filename>views/replacements/tmpl/index.html</filename>
+	</files>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="components/com_replacements/images/icon-16-repllogo.png" link="option=com_replacements&amp;view=replacements&amp;layout=default">Replacements</menu>
+		<submenu>
+			<menu img="components/com_replacements/images/icon-16-repllogo.png" link="option=com_replacements&amp;view=replacements&amp;layout=default">Zastępstwa</menu>
+			<menu link="option=com_replacements&amp;view=classes&amp;layout=default">Klasy</menu>
+			<menu link="option=com_replacements&amp;view=teachers&amp;layout=default">Nauczyciele</menu>
+			<menu link="option=com_replacements&amp;view=subjects&amp;layout=default">Przedmioty</menu>
+			<menu link="option=com_replacements&amp;view=places&amp;layout=default">Miejsca/Sale</menu>
+			<menu link="option=com_replacements&amp;view=hours&amp;layout=default">Godziny</menu>
+		</submenu>
+
+		<!-- Administration Main File Copy Section -->
+		<files folder="admin">
+			<filename>replacements.php</filename>
+			<filename>index.html</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+			<filename>controller.php</filename>
+			
+			<filename>css/default.css</filename>
+			<filename>css/index.html</filename>
+			<filename>images/icon-32-save2new.png</filename>
+			<filename>images/icon-16-repllogo.png</filename>
+			<filename>images/icon-48-repllogo.png</filename>
+			<filename>images/index.html</filename>
+			
+			<!-- <filename>controllers/zastepstwa.php</filename> -->
+			<filename>controllers/replacements.php</filename>
+			<filename>controllers/classes.php</filename>
+			<filename>controllers/teachers.php</filename>
+			<filename>controllers/subjects.php</filename>
+			<filename>controllers/places.php</filename>
+			<filename>controllers/hours.php</filename>
+			<filename>controllers/index.html</filename>
+			
+			<filename>models/replacements.php</filename>
+			<filename>models/replacement.php</filename>
+			<filename>models/classes.php</filename>
+			<filename>models/class.php</filename>
+			<filename>models/teachers.php</filename>
+			<filename>models/teacher.php</filename>
+			<filename>models/subjects.php</filename>
+			<filename>models/subject.php</filename>
+			<filename>models/places.php</filename>
+			<filename>models/place.php</filename>
+			<filename>models/hours.php</filename>
+			<filename>models/hour.php</filename>
+			<filename>models/index.html</filename>
+			
+			<!-- <filename>tables/zastepstwa.php</filename> -->
+			<filename>tables/replacement.php</filename>
+			<filename>tables/replacementid.php</filename>
+			<filename>tables/class.php</filename>
+			<filename>tables/teacher.php</filename>
+			<filename>tables/subject.php</filename>
+			<filename>tables/place.php</filename>
+			<filename>tables/hour.php</filename>
+			<filename>tables/index.html</filename>
+			
+			<filename>views/index.html</filename>
+			
+			
+			<filename>views/replacements/view.html.php</filename>
+			<filename>views/replacements/index.html</filename>
+			<filename>views/replacements/tmpl/default.php</filename>
+			<filename>views/replacements/tmpl/index.html</filename>
+			<filename>views/replacement/view.html.php</filename>
+			<filename>views/replacement/index.html</filename>
+			<filename>views/replacement/tmpl/form.php</filename>
+			<filename>views/replacement/tmpl/index.html</filename>
+			
+			<filename>views/classes/view.html.php</filename>
+			<filename>views/classes/index.html</filename>
+			<filename>views/classes/tmpl/default.php</filename>
+			<filename>views/classes/tmpl/index.html</filename>
+			<filename>views/class/view.html.php</filename>
+			<filename>views/class/index.html</filename>
+			<filename>views/class/tmpl/form.php</filename>
+			<filename>views/class/tmpl/index.html</filename>
+			
+			<filename>views/teachers/view.html.php</filename>
+			<filename>views/teachers/index.html</filename>
+			<filename>views/teachers/tmpl/default.php</filename>
+			<filename>views/teachers/tmpl/index.html</filename>
+			<filename>views/teacher/view.html.php</filename>
+			<filename>views/teacher/index.html</filename>
+			<filename>views/teacher/tmpl/form.php</filename>
+			<filename>views/teacher/tmpl/index.html</filename>
+			
+			<filename>views/subjects/view.html.php</filename>
+			<filename>views/subjects/index.html</filename>
+			<filename>views/subjects/tmpl/default.php</filename>
+			<filename>views/subjects/tmpl/index.html</filename>
+			<filename>views/subject/view.html.php</filename>
+			<filename>views/subject/index.html</filename>
+			<filename>views/subject/tmpl/form.php</filename>
+			<filename>views/subject/tmpl/index.html</filename>
+			
+			<filename>views/places/view.html.php</filename>
+			<filename>views/places/index.html</filename>
+			<filename>views/places/tmpl/default.php</filename>
+			<filename>views/places/tmpl/index.html</filename>
+			<filename>views/place/view.html.php</filename>
+			<filename>views/place/index.html</filename>
+			<filename>views/place/tmpl/form.php</filename>
+			<filename>views/place/tmpl/index.html</filename>
+			
+			<filename>views/hours/view.html.php</filename>
+			<filename>views/hours/index.html</filename>
+			<filename>views/hours/tmpl/default.php</filename>
+			<filename>views/hours/tmpl/index.html</filename>
+			<filename>views/hour/view.html.php</filename>
+			<filename>views/hour/index.html</filename>
+			<filename>views/hour/tmpl/form.php</filename>
+			<filename>views/hour/tmpl/index.html</filename>
+		</files>  
+	</administration>
+</install>
