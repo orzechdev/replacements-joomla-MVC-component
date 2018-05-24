@@ -4,8 +4,8 @@
 
 #### Front view
 
-![front view](https://github.com/orzechdev/replacements-joomla-MVC-component/blob/beta/README_files/3_front.png)
+![front view](https://github.com/orzechdev/replacements-joomla-MVC-component/blob/master/README_files/3_front.png)
 
 #### Admin view
 
-![admin view](https://github.com/orzechdev/replacements-joomla-MVC-component/blob/beta/README_files/3_admin.png)
+![admin view](https://github.com/orzechdev/replacements-joomla-MVC-component/blob/master/README_files/3_admin.png)
