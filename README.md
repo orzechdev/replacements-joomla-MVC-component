@@ -1,6 +1,6 @@
 # Replacements, Joomla! 1.5 MVC component
 
-#### Old, not finished component for replacements in Joomla! 1.5 written in MVC pattern
+#### Teacher replacements management module for Joomla! 1.5 written in MVC pattern
 
 #### Front view
 
